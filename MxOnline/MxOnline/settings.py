@@ -25,7 +25,7 @@ SECRET_KEY = '8m72f_m&02hc0g)mub^9rr6qd4i8f+!)wtvfc8kb!w#e(n!ewl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'user',
+    'courses',
+    'operation',
+    'organization',
 ]
 
 MIDDLEWARE = [
@@ -47,9 +51,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'apilogging.ApiLoggingMiddleware',
 ]
 
 ROOT_URLCONF = 'MxOnline.urls'
+AUTH_USER_MODEL = "user.UserProfile"
 
 TEMPLATES = [
     {
@@ -207,3 +213,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]

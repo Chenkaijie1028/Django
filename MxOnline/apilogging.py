@@ -17,8 +17,8 @@ class ApiLoggingMiddleware(object):
             body = dict()
         body.update(dict(request.POST))
         response = self.get_response(request)
-    # if request.method != 'GET':
-        self.apiLogger.info("{} {} {} {} {} {}".format(
-            request.user, request.method, request.path, body,
-            response.status_code, response.reason_phrase))
+        if request.method != 'GET':
+            self.apiLogger.info("{} {} {} {} {} {}".format(
+                request.user, request.method, request.path, body,
+                response.status_code, response.reason_phrase))
         return response

@@ -1,0 +1,6 @@
+2019-12-06 01:25:29,413 FuncName:log_response LINE:228 [WARNING]- Bad Request: /
+2019-12-06 01:25:29,988 FuncName:log_response LINE:228 [WARNING]- Bad Request: /favicon.ico
+2019-12-06 01:27:24,524 FuncName:log_response LINE:228 [WARNING]- Not Found: /favicon.ico
+2019-12-06 01:41:06,645 FuncName:log_response LINE:228 [WARNING]- Not Found: /http:/123.125.114.144/
+2019-12-06 02:33:41,113 FuncName:log_response LINE:228 [WARNING]- Not Found: /http:/check.best-proxies.ru/azenv.php
+2019-12-06 02:33:46,193 FuncName:log_response LINE:228 [WARNING]- Not Found: /check.best-proxies.ru:80

@@ -1,0 +1,5 @@
+INFO 2019-12-06 01:40:36,164 apilogging __call__ AnonymousUser POST /admin/login/ {'csrfmiddlewaretoken': ['sVBABe4Kz0MzJ8tq7yvHnqWs3mTd0RueVqdlR0gryLyprKKxLzRo29KFwAad12XQ'], 'username': ['admin'], 'password': ['admin123.'], 'next': ['/admin/']} 200 OK
+INFO 2019-12-06 01:41:06,644 apilogging __call__ AnonymousUser HEAD /http:/123.125.114.144/ {} 404 Not Found
+INFO 2019-12-06 01:43:49,952 apilogging __call__ AnonymousUser POST /admin/login/ {'csrfmiddlewaretoken': ['3nO74ezQ0SmIRvN5lQMHzzOO8W1sgH8dwSqSk0LxZD8yz74cZR8oeiC1BaishSBP'], 'username': ['admin'], 'password': ['admin123.'], 'next': ['/admin/']} 200 OK
+INFO 2019-12-06 02:33:41,112 apilogging __call__ AnonymousUser POST /http:/check.best-proxies.ru/azenv.php {'testPost': ['true']} 404 Not Found
+INFO 2019-12-06 02:33:46,193 apilogging __call__ AnonymousUser CONNECT /check.best-proxies.ru:80 {} 404 Not Found
